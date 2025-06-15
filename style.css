@@ -11,64 +11,70 @@ body {
   }
   
   h1 {
-    font-size: 2.2em;
-    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 30px;
   }
   
-  p {
-    font-size: 1em;
-    color: #444;
-  }
-  
-  #countdown-container {
+  #countdown {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-size: 2em;
+  }
+  
+  #countdown div {
+    background-color: white;
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
   
-  .card {
-    background: white;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-    margin: 20px 0;
-    width: 90%;
+  #countdown span {
+    font-weight: bold;
+    display: block;
+  }
+  
+  small {
+    font-size: 0.6em;
+    color: #666;
+  }
+  .event-block {
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
     max-width: 500px;
-    text-align: center;
-    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
   
-  .card:hover {
-    transform: scale(1.03);
+  .event-block h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #2c3e50;
   }
   
-  .card h2 {
-    margin: 0 0 5px;
-  }
-  
-  .card .date {
+  .event-block em {
     font-size: 0.9em;
-    color: #777;
-    margin-bottom: 15px;
+    color: #555;
   }
   
   .timer {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
+    margin-top: 15px;
   }
   
   .timer div {
-    background: #f0f0f0;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 1.2em;
-    min-width: 60px;
+    text-align: center;
   }
   
   .timer span {
-    display: block;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.6em;
+  }
+  
+  small {
+    font-size: 0.7em;
+    color: #888;
   }
